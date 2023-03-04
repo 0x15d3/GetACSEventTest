@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Deneme
 {
-    public class CHCNetSDK
+    public class HCNetSDK
     {
         #region HCNetSDK.dll macro definition
         public const int NET_DVR_GET_ACS_EVENT = 2514;//设备事件获取
@@ -345,7 +345,7 @@ namespace Deneme
         public static extern bool NET_DVR_Cleanup();
 
         [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
-        public static extern int NET_DVR_GetNextRemoteConfig(int lHandle, ref CHCNetSDK.NET_DVR_ACS_EVENT_CFG lpOutBuff, int dwOutBuffSize);
+        public static extern int NET_DVR_GetNextRemoteConfig(int lHandle, ref HCNetSDK.NET_DVR_ACS_EVENT_CFG lpOutBuff, int dwOutBuffSize);
 
 
         [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
@@ -509,11 +509,11 @@ namespace Deneme
             public uint dwSize;
             public uint dwMajor;
             public uint dwMinor;
-            public CHCNetSDK.NET_DVR_TIME struStartTime;
-            public CHCNetSDK.NET_DVR_TIME struEndTime;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.ACS_CARD_NO_LEN, ArraySubType = UnmanagedType.I1)]
+            public HCNetSDK.NET_DVR_TIME struStartTime;
+            public HCNetSDK.NET_DVR_TIME struEndTime;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.ACS_CARD_NO_LEN, ArraySubType = UnmanagedType.I1)]
             public byte[] byCardNo;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.NAME_LEN, ArraySubType = UnmanagedType.I1)]
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.NAME_LEN, ArraySubType = UnmanagedType.I1)]
             public byte[] byName;
             public uint dwBeginSerialNo;
             public byte byPicEnable;
@@ -525,19 +525,19 @@ namespace Deneme
             public ushort wInductiveEventType;
             public byte bySearchType;
             public byte byRes1;
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = CHCNetSDK.NET_SDK_MONITOR_ID_LEN)]
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = HCNetSDK.NET_SDK_MONITOR_ID_LEN)]
             public string szMonitorID;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.NET_SDK_EMPLOYEE_NO_LEN, ArraySubType = UnmanagedType.I1)]
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.NET_SDK_EMPLOYEE_NO_LEN, ArraySubType = UnmanagedType.I1)]
             public byte[] byEmployeeNo;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 140, ArraySubType = UnmanagedType.I1)]
             public byte[] byRes;
 
             public void Init()
             {
-                byCardNo = new byte[CHCNetSDK.ACS_CARD_NO_LEN];
-                byName = new byte[CHCNetSDK.NAME_LEN];
+                byCardNo = new byte[HCNetSDK.ACS_CARD_NO_LEN];
+                byName = new byte[HCNetSDK.NAME_LEN];
                 byRes2 = new byte[2];
-                byEmployeeNo = new byte[CHCNetSDK.NET_SDK_EMPLOYEE_NO_LEN];
+                byEmployeeNo = new byte[HCNetSDK.NET_SDK_EMPLOYEE_NO_LEN];
                 byRes = new byte[140];
             }
         }
@@ -546,7 +546,7 @@ namespace Deneme
         public struct NET_DVR_ACS_EVENT_DETAIL
         {
             public uint dwSize;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.ACS_CARD_NO_LEN)]
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.ACS_CARD_NO_LEN)]
             public byte[] byCardNo;
             public byte byCardType;
             public byte byWhiteListNo;
@@ -567,7 +567,7 @@ namespace Deneme
             public ushort wLocalControllerID;//word
             public byte byInternetAccess;
             public byte byType;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.MACADDR_LEN)]
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.MACADDR_LEN)]
             public byte[] byMACAddr;
             public byte bySwipeCardType;
             public byte byRes2;
@@ -582,16 +582,16 @@ namespace Deneme
             public byte byCurrentVerifyMode;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
             public byte[] byRe2;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.NET_SDK_EMPLOYEE_NO_LEN)]
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.NET_SDK_EMPLOYEE_NO_LEN)]
             public byte[] byEmployeeNo;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
             public byte[] byRes;
             public void init()
             {
-                byCardNo = new byte[CHCNetSDK.ACS_CARD_NO_LEN];
-                byMACAddr = new byte[CHCNetSDK.MACADDR_LEN];
+                byCardNo = new byte[HCNetSDK.ACS_CARD_NO_LEN];
+                byMACAddr = new byte[HCNetSDK.MACADDR_LEN];
                 byRe2 = new byte[2];
-                byEmployeeNo = new byte[CHCNetSDK.NET_SDK_EMPLOYEE_NO_LEN];
+                byEmployeeNo = new byte[HCNetSDK.NET_SDK_EMPLOYEE_NO_LEN];
                 byRes = new byte[64];
             }
         }
@@ -620,11 +620,11 @@ namespace Deneme
             public uint dwSize;
             public uint dwMajor;
             public uint dwMinor;
-            public CHCNetSDK.NET_DVR_TIME struTime;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = CHCNetSDK.MAX_NAMELEN)]
+            public HCNetSDK.NET_DVR_TIME struTime;
+            [MarshalAs(UnmanagedType.ByValArray, SizeConst = HCNetSDK.MAX_NAMELEN)]
             public byte[] sNetUser;
-            public CHCNetSDK.NET_DVR_IPADDR struRemoteHostAddr;
-            public CHCNetSDK.NET_DVR_ACS_EVENT_DETAIL struAcsEventInfo;
+            public HCNetSDK.NET_DVR_IPADDR struRemoteHostAddr;
+            public HCNetSDK.NET_DVR_ACS_EVENT_DETAIL struAcsEventInfo;
             public uint dwPicDataLen;
             public IntPtr pPicData;  // picture data
             public ushort wInductiveEventType;
@@ -634,7 +634,7 @@ namespace Deneme
 
             public void init()
             {
-                sNetUser = new byte[CHCNetSDK.MAX_NAMELEN];
+                sNetUser = new byte[HCNetSDK.MAX_NAMELEN];
                 struRemoteHostAddr.Init();
                 struAcsEventInfo.init();
                 byRes = new byte[61];

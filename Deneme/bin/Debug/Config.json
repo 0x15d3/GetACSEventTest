@@ -1,0 +1,40 @@
+{
+
+	"device1":{
+   "ipAddress":"192.168.1.226",
+   "port":"8000",
+   "username":"admin1",
+   "password":"Tise1234"
+   "year":"",
+   "month":"",
+   "day":"",
+   "hour":"",
+   "minute":"",
+   "second":""
+},
+	"device2":{
+   "ipAddress":"192.168.1.228",
+   "port":"8001",
+   "username":"admin2",
+   "password":"Tise1234"
+   "year":"",
+   "month":"",
+   "day":"",
+   "hour":"",
+   "minute":"",
+   "second":""
+},
+	"device3":{
+   "ipAddress":"192.168.1.227",
+   "port":"8002",
+   "username":"admin3",
+   "password":"Tise1234"
+   "year":"",
+   "month":"",
+   "day":"",
+   "hour":"",
+   "minute":"",
+   "second":""
+}
+
+}

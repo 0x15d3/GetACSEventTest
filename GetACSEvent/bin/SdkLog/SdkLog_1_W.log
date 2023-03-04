@@ -1,0 +1,9 @@
+[2023-03-05 00:02:02.582][INF] The COM:HCCoreBase ver is 1.0.0.1, 2018_06_01. Async:1.
+[2023-03-05 00:02:02.582][INF] The COM:Core ver is 6.1.3.5, 2019_09_26. Async:1.
+[2023-03-05 00:02:02.582][INF] This HCNetSDK ver is 6.1.3.5 Ver 2019_09_26.
+[2023-03-05 00:02:05.661][INF] Login dev 192.168.1.226:8000.
+[2023-03-05 00:02:09.170][ERR] [192.168.1.226:8000]LogonDevice Link_CreateLink fail[7].
+[2023-03-05 00:02:09.933][INF] Login dev 192.168.1.228:8001.
+[2023-03-05 00:02:13.448][ERR] [192.168.1.228:8001]LogonDevice Link_CreateLink fail[7].
+[2023-03-05 00:02:14.759][INF] Login dev 192.168.1.227:8002.
+[2023-03-05 00:02:18.275][ERR] [192.168.1.227:8002]LogonDevice Link_CreateLink fail[7].
