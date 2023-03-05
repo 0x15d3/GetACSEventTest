@@ -27,3 +27,29 @@ C:\Users\yztrk\Desktop\ \GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.pdb
 C:\Users\yztrk\Desktop\ \GetACSEvent\GetACSEvent\bin\Newtonsoft.Json.dll
 C:\Users\yztrk\Desktop\ \GetACSEvent\GetACSEvent\bin\Newtonsoft.Json.xml
 C:\Users\yztrk\Desktop\ \GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.CopyComplete
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\bin\GetACSEvent.exe.config
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\bin\GetACSEvent.exe
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\bin\GetACSEvent.pdb
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\bin\Newtonsoft.Json.dll
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\bin\Newtonsoft.Json.xml
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.AssemblyReference.cache
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.SuggestedBindingRedirects.cache
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.Form1.resources
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.GetACSEvent.resources
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.AddDevice.resources
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.Properties.Resources.resources
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.GenerateResource.cache
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.CoreCompileInputs.cache
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.CopyComplete
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.exe
+C:\Users\yztrk\Desktop\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.pdb
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.AssemblyReference.cache
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.SuggestedBindingRedirects.cache
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.Form1.resources
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.GetACSEvent.resources
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.AddDevice.resources
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.Properties.Resources.resources
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.GenerateResource.cache
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.csproj.CoreCompileInputs.cache
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.exe
+C:\Users\yztrk\Desktop\Projekte\GetACSEvent\GetACSEvent\GetACSEvent\obj\x64\Debug\GetACSEvent.pdb

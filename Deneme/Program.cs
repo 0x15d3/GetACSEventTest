@@ -11,6 +11,9 @@ namespace Deneme
     {
         static void Main(string[] args)
         {
+            Form1 form= new Form1();
+            form.ShowDialog();
+
 
             string jsonString = File.ReadAllText("./db/Config.json");
             JObject devicesJson = JObject.Parse(jsonString);
@@ -22,7 +25,7 @@ namespace Deneme
                 JObject device = (JObject)deviceProp.Value;
                 string ipAddress = (string)device["ipAddress"];
                 int port = (int)device["port"];
-                string userName = (string)device["userName"];
+                string userName = (string)device["username"];
                 string password = (string)device["password"];
                 HCNetSDK.NET_DVR_USER_LOGIN_INFO struLoginInfo = new HCNetSDK.NET_DVR_USER_LOGIN_INFO();
                 HCNetSDK.NET_DVR_DEVICEINFO_V40 struDeviceInfoV40 = new HCNetSDK.NET_DVR_DEVICEINFO_V40();
@@ -33,17 +36,11 @@ namespace Deneme
                 struLoginInfo.sPassword = password;
 
 
-                HCNetSDK sdk = new HCNetSDK();
-                if (!HCNetSDK.NET_DVR_Init())
-                {
-                    Console.WriteLine("Failed to initialize SDK.");
-                    return;
-                }
-
                 int userId = HCNetSDK.NET_DVR_Login_V40(ref struLoginInfo, ref struDeviceInfoV40);
                 if (userId < 0)
                 {
-                    Console.WriteLine($"Failed to login to device {deviceProp.Name}.");
+                    Console.WriteLine($"{deviceProp.Name} Adli cihaza baglanilamadi.");
+                    Console.WriteLine($"{userName}-{ipAddress}-{port}");
                     return;
                 }
 

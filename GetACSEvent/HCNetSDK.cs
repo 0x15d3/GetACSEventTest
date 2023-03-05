@@ -5,7 +5,7 @@ namespace GetACSEvent
 {
     public class CHCNetSDK
     {
-        #region HCNetSDK.dll macro definition
+        #region CHCNetSDK.dll macro definition
         public const int NET_DVR_GET_ACS_EVENT = 2514;//设备事件获取
         public const int NET_DVR_DEV_ADDRESS_MAX_LEN = 129; //device address max length
         public const int NET_DVR_LOGIN_USERNAME_MAX_LEN = 64;   //login username max length
@@ -334,39 +334,39 @@ namespace GetACSEvent
         #endregion
 
 
-        #region HCNetSDK.dll function definition
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        #region CHCNetSDK.dll function definition
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern bool NET_DVR_StopRemoteConfig(int lHandle);
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern bool NET_DVR_Logout_V30(int m_UserID);
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern bool NET_DVR_Cleanup();
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern int NET_DVR_GetNextRemoteConfig(int lHandle, ref CHCNetSDK.NET_DVR_ACS_EVENT_CFG lpOutBuff, int dwOutBuffSize);
 
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern bool NET_DVR_Init();
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern int NET_DVR_Login_V40(ref NET_DVR_USER_LOGIN_INFO pLoginInfo, ref NET_DVR_DEVICEINFO_V40 lpDeviceInfo);
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern uint NET_DVR_GetLastError();
 
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern bool NET_DVR_SetLogToFile(int nLogLevel, string strLogDir, bool bAutoDel);
 
         public delegate void RemoteConfigCallback(uint dwType, IntPtr lpBuffer, uint dwBufLen, IntPtr pUserData);
-        [DllImport(@"\HCNetSDK\HCNetSDK.dll")]
+        [DllImport(@"\CHCNetSDK\CHCNetSDK.dll")]
         public static extern int NET_DVR_StartRemoteConfig(int lUserID, int dwCommand, IntPtr lpInBuffer, int dwInBufferLen, RemoteConfigCallback cbStateCallback, IntPtr pUserData);
 
         #endregion
 
-        #region HCNetSDK.dll structure definition
+        #region CHCNetSDK.dll structure definition
 
         [StructLayoutAttribute(LayoutKind.Sequential)]
         public struct NET_DVR_DEVICEINFO_V30
